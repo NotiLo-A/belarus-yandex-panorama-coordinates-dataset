@@ -26,8 +26,8 @@ This repository presents a comprehensive dataset comprising geographical coordin
 └── scraper.js
 ```
 
-## Dataset Demographics and Spatial Distribution
-The dataset aggregates a total of 258,443 precise geospatial coordinate points across six major administrative subdivisions. The proportional distribution of panoramic points is illustrated below:
+## Dataset Overview and Spatial Distribution
+The dataset presented herein was systematically acquired on **June 18, 2026**. It aggregates a total of 258,443 precise geospatial coordinate points across six major administrative subdivisions. The proportional distribution of panoramic points is illustrated below:
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/d4bd56d3-8765-4af9-aaff-2eeea9d8a9ee" />
 
@@ -43,13 +43,17 @@ The dataset aggregates a total of 258,443 precise geospatial coordinate points a
 
 ## Methodology
 
+
 ### 1. Data Acquisition
 The data acquisition protocol leverages a concurrent, queue-based traversal algorithm implemented in JavaScript (`scraper.js`). The Yandex Maps panoramas are structured as an interconnected spatial graph. The scraping utility initializes with a seed Object ID (`oid`), retrieves the corresponding panoramic metadata via the internal Yandex API, and recursively enqueues contiguous panoramic nodes extrapolated from the topological properties.
 
 To optimize extraction velocity and mitigate latency, the script executes asynchronous HTTP requests employing batched concurrency. The extracted multidimensional coordinates are subsequently serialized into a `Blob` and exported to local storage as a JSON array.
 
+**Execution Duration:** The temporal overhead required to execute a complete urban graph traversal scales non-linearly, ranging from approximately **20 minutes to 2 hours**. This variance is strictly governed by network throughput, API responsiveness, rate-limiting constraints, and the absolute spatial density of the targeted municipality's panoramic nodes.
+
 ### 2. Coordinate Transformation
 The extracted raw spatial data represents point locations in dynamic array configurations. The Python utility (`converter.py`) is designed specifically to convert these raw data arrays into the standardized GeoJSON format (`RFC 7946`). This algorithmic conversion yields a `FeatureCollection` composed of `Point` geometries, ensuring native compatibility with standard GIS rendering engines and spatial databases.
+
 
 ## Usage Guidelines
 
