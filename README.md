@@ -62,6 +62,10 @@ The extracted raw spatial data represents point locations in dynamic array confi
 
 ## Usage Guidelines
 
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/80016af8-8df8-4ca1-8018-24acd1cb3291" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/8eade9b8-158d-416d-9241-aab5e3874114" />
+
+
 ### Executing the Data Scraper
 
 1. Navigate to the Yandex Maps web interface.
