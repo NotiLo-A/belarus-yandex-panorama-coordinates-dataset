@@ -1,2 +1,7 @@
-# belarus-yandex-panorama-coordinates-dataset
-Exhaustive dataset of all existing Yandex Maps panorama coordinates (lat/lon/alt) for every regional center in Belarus.
+Minsk - 145040
+Gomel - 36256
+Brest - 21593
+Grodno - 19923
+Mogilew - 19279
+Vitebsk - 16352
+
