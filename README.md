@@ -1,5 +1,10 @@
 # Belarus Yandex Panorama Coordinates Dataset
 
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/0e74cae2-1483-47c4-b9ed-f8428ba939e9" />
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/3d3c9632-c423-45ee-ac46-6f52c0e346d9" />
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/1ce82e89-5c8d-4aa5-a5a1-f0bace0bb708" />
+
+
 ## Abstract
 This repository presents a comprehensive dataset comprising geographical coordinates of Yandex Street View panoramas across the administrative centers of the Republic of Belarus. Furthermore, it provides the requisite data extraction and transformation utilities employed to compile this dataset. The collection aims to facilitate geospatial analysis, the development of location-based gamified applications, and geographic information system (GIS) modeling.
 
